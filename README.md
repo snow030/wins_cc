@@ -7,7 +7,7 @@
 ## 🧩 第三方工具依赖
 
 - **Live Caption (Windows 11)**：系统自带语音转文字服务
-- **Tesseract OCR**：开源图像识别引擎，用于屏幕文字提取
+- **Tesseract OCR (需自行安装)**：开源图像识别引擎，用于屏幕文字提取
 - **Google Translate API (v1)**：来自 Chrome 的网页翻译接口，无需认证、无调用限制
 
 ---
@@ -41,3 +41,8 @@
 
 - [win_cc_1.2.0-scale100.exe](https://www.mediafire.com/file/n7geptx7g0wxdag/wins_cc_1.2.0-scale100.exe/file)
 - [win_cc_1.2.0-scale125.exe](https://www.mediafire.com/file/wx31qotdfet8pe2/wins_cc_1.2.0-scale125.exe/file)
+
+### 🔧 必要的工具：
+- 请确保设备上的 Live Capture 能正常使用。程序默认将运行`C:/Windows/System32/LiveCaptions.exe`
+- 请额外安装配置 [Tesseract OCR](https://tesseract-ocr.cn/tessdoc/Installation.html) (5.x+)
+  - 作者推荐下载[UB-Mannheim](https://github.com/UB-Mannheim/tesseract/wiki)提供的已编译安装包。
