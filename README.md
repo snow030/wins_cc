@@ -39,8 +39,8 @@
 
 ### ✅ EXE 可执行程序下载：
 
-- [win_cc_1.2.0-scale100.exe](https://www.mediafire.com/file/n7geptx7g0wxdag/wins_cc_1.2.0-scale100.exe/file)
-- [win_cc_1.2.0-scale125.exe](https://www.mediafire.com/file/wx31qotdfet8pe2/wins_cc_1.2.0-scale125.exe/file)
+- [win_cc_1.2.0-scale100.exe](https://www.mediafire.com/file/n7geptx7g0wxdag/wins_cc_1.2.0-scale100.exe/file) - 适配屏幕缩放比例 100% 的用户
+- [win_cc_1.2.0-scale125.exe](https://www.mediafire.com/file/wx31qotdfet8pe2/wins_cc_1.2.0-scale125.exe/file) - 适配屏幕缩放比例 125% 的用户
 
 ### 🔧 必要的工具：
 - 请确保设备上的 Live Capture 能正常使用。程序默认将运行`C:/Windows/System32/LiveCaptions.exe`
