@@ -1,24 +1,43 @@
-# 🌐 wins_cc · 英文长句智能提取与翻译工具
+# 🌐 wins_cc · 免费同声传译工具
 
-**wins_cc** 是一个基于 Python 开发的英文文本处理器，专注于提取“最长公共子句”作为上下文核心，并配合调用第三方翻译引擎，实现高质量的英文转中文翻译体验。
-
----
-
-## 📌 项目特性 Features
-
-- 🧠 **最长公共子句匹配**：提取英文文本中的语义核心，兼容大小写与标点扰动。
-- 🌍 **英译中翻译管线**：仅支持英文 ➜ 中文的自然语言翻译任务。
-- 🔗 **集成第三方工具**：
-  - **Tesseract OCR**：用于文本图像识别（可选）。
-  - **翻译引擎**（如 Chrome 实时翻译 API、或其他本地/在线接口）。
-- 💾 **零依赖 GUI（可选）**：使用 Tkinter 构建，适用于便携使用场景。
-- 🧳 **可打包为独立可执行文件**：支持 PyInstaller 打包，适合部署于无 Python 环境的机器。
+**wins_cc** 是一款基于 Python 的英文同声传译程序，它扩展了 Windows 11 内建的 Live Caption（实时字幕）功能，结合 OCR 与翻译引擎，实现英语 ➜ 中文的自动翻译流程。当前仅支持英译中，如需多语言支持可修改源代码适配。
 
 ---
 
-## 🔧 使用说明
+## 🧩 第三方工具依赖
 
-运行主程序：
+- **Live Caption (Windows 11)**：系统自带语音转文字服务
+- **Tesseract OCR**：开源图像识别引擎，用于屏幕文字提取
+- **Google Translate API (v1)**：来自 Chrome 的网页翻译接口，无需认证、无调用限制
 
-```bash
-python wins_cc_1.2.0-scale125.py
+---
+
+## 📦 Python 第三方库
+
+| 库名           | 用途描述                  |
+|----------------|--------------------------|
+| `pytesseract`  | Python 接口封装 Tesseract |
+| `pywin32`      | 用于识别 & 获取窗口信息    |
+| `pillow`       | 用于截取指定屏幕区域       |
+
+---
+
+## 🔍 核心功能亮点
+
+- 🧠 **字幕追踪（LCS）**：使用最长公共子句匹配（Longest Common Subsentence）算法检测新出现字幕段落
+- ✨ **新增内容高亮**：仅展示新变化内容，并以黄色字体高亮显示，拥有不错的可读性
+- 🌍 **英译中翻译链**：通过 Chrome 内建 Google Translate 接口完成文本翻译（低延迟、零限制）
+- 🧱 **模块化设计**：各功能独立封装，可按需替换 OCR / 翻译模块
+- 💻 **极简界面（GUI）**：基于 Tkinter，仅显示翻译内容 + 黑色半透明背景
+- 📦 **可独立打包运行**：支持 PyInstaller 制作 EXE，便于部署与便携运行
+
+---
+
+## 🚀 使用方式
+
+可以下载 python 源代码在本地上运行，或通过下面的链接下载 .exe 程序。
+
+### ✅ EXE 可执行程序下载：
+
+- [win_cc_1.2.0-scale100.exe](https://www.mediafire.com/file/n7geptx7g0wxdag/wins_cc_1.2.0-scale100.exe/file)
+- [win_cc_1.2.0-scale125.exe](https://www.mediafire.com/file/wx31qotdfet8pe2/wins_cc_1.2.0-scale125.exe/file)
