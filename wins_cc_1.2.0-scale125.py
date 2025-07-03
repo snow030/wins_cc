@@ -146,7 +146,7 @@ def bg_tk():
         new_rect = GUI.GetWindowRect(hwnd_caption)
         if rect != new_rect:
             rect = new_rect
-            screen = tuple( round((rect[idx]+margin[idx])*1.25) for idx in range(4) )
+            screen = tuple( round((rect[idx]+margin[idx])*1.25) for idx in range(4) ) # scale 125%
             new_geo = f"{rect[2]-rect[0]+margin[2]}x{round((rect[3]-rect[1])*0.8)}+{rect[0]}+{rect[3]}"
             root_bg.geometry(new_geo)
             root.geometry(new_geo)
